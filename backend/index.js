@@ -12,10 +12,12 @@ app.use(express.json());
 app.use(cors());
 app.get("/", ProductController);
 
-const PORT = 3000;
+
+dbConnection();
+const PORT =process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log("Server started");
-  dbConnection();
+  console.log(`Server started as PORT ${PORT}`);
+  // dbConnection();
   // pushDataToDb();
 });

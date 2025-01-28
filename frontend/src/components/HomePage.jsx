@@ -9,7 +9,7 @@ const HomePage = () => {
   const [val, setVal] = useState([]);
   useEffect( () =>{
     const fun = async () => {
-      const response = await axios.get("http://localhost:3000");
+      const response = await axios.get("http://localhost:8000");
       setVal(response.data);
     };
     fun();
