@@ -17,7 +17,7 @@ dbConnection();
 const PORT =process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Server started as PORT ${PORT}`);
+  console.log(`Server started at PORT ${PORT}`);
   // dbConnection();
   // pushDataToDb();
 });

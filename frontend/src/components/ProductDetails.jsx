@@ -11,7 +11,7 @@ const ProductDetails = () => {
     // fetching from API
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://perfumestore-backend.onrender.com`);
+        const response = await axios.get("http://localhost:8000");
         const products = response.data;
         const product = products.find((p) => p._id == id);
 
