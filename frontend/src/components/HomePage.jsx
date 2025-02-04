@@ -9,7 +9,7 @@ const HomePage = () => {
   const [val, setVal] = useState([]);
   useEffect( () =>{
     const fun = async () => {
-      const response = await axios.get("http://localhost:8000");
+      const response = await axios.get("https://perfumestore-58sg.onrender.com");
       setVal(response.data);
     };
     fun();
